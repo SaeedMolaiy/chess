@@ -1,0 +1,14 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Color x:Key="BackgroundColor">#302E2B</Color>
+
+    <SolidColorBrush x:Key="BackgroundBrush" Color="{StaticResource BackgroundColor}"/>
+
+    <Style x:Key="Grid" TargetType="Grid">
+
+        <Setter Property="Background" Value="{StaticResource BackgroundBrush}"/>
+
+    </Style>
+
+</ResourceDictionary>
