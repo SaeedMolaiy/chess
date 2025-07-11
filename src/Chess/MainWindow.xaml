@@ -17,7 +17,7 @@
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="3*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
 
@@ -26,6 +26,42 @@
             <RowDefinition Height="5*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+
+        <Border x:Name="TitleBar"
+                Grid.Row="0"
+                Grid.Column="0"
+                Background="{StaticResource TitleBarBrush}"
+                Margin="0 0 0 12"
+                Grid.ColumnSpan="4">
+
+            <DockPanel LastChildFill="True">
+
+                <TextBlock 
+                    Margin="10,0,0,0"
+                    Text="Calculator" 
+                    FontSize="15"
+                    Foreground="White"
+                    VerticalAlignment="Center"/>
+
+                <StackPanel Orientation="Horizontal" DockPanel.Dock="Right" HorizontalAlignment="Right">
+
+                    <Button x:Name="MinimizeButton"
+                            Style="{StaticResource TitleBarButtonStyle}"
+                            Content="—"/>
+
+                    <Button x:Name="MaximizeButton"
+                            Style="{StaticResource TitleBarButtonStyle}"
+                            Content="◻"/>
+
+                    <Button x:Name="CloseButton"
+                            Style="{StaticResource TitleBarButtonStyle}"
+                            Content="✕"/>
+
+                </StackPanel>
+
+            </DockPanel>
+
+        </Border>
 
         <Grid x:Name="ChessBoardGrid"
               Grid.Row="1"
