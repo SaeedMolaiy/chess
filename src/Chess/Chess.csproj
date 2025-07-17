@@ -13,4 +13,9 @@
     <Content Include="chess-logo.ico" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Chess.Engine\Chess.Engine.csproj" />
+    <ProjectReference Include="..\Chess.Schemas\Chess.Schemas.csproj" />
+  </ItemGroup>
+
 </Project>
