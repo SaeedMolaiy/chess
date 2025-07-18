@@ -10,4 +10,9 @@
     <ProjectReference Include="..\Chess.Schemas\Chess.Schemas.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Game\" />
+    <Folder Include="Board\" />
+  </ItemGroup>
+
 </Project>
